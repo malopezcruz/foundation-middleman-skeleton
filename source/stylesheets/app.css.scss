@@ -1,5 +1,6 @@
 @import "settings";
 @import "foundation";
+@import "mysettings";
 
 
 header {
@@ -28,4 +29,8 @@ header {
     // }
   }
 
+}
+
+footer {
+  @include grid-row;
 }
