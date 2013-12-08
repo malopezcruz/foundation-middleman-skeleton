@@ -78,11 +78,14 @@ sprockets.append_path "bower_components/foundation/js"
 sprockets.append_path "bower_components/modernizr"
 sprockets.append_path "bower_components/jquery"
 
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
+
+# set :fonts_dir, 'fonts' #set absolut path in foundation-icons.scss
 
 activate :livereload
 

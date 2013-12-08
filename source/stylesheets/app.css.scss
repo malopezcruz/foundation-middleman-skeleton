@@ -1,24 +1,29 @@
 @import "settings";
 @import "foundation";
-@import "foundation/components/grid";
+@import "foundation-icons";
 
-
-/*header {
+header {
   @include grid-row;
 
-  .logo  { @include grid-column($columns:3, $center:false); }
-  padding-bottom: em-calc(10px);}*/
+  .logo  { @include grid-column($columns:3, $center:true); }
+  padding-bottom: em-calc(10px);
+
+}
+
 
 .main-content {
-  /*@include grid-column($columns:12);*/
-  padding-top: 1.5rem;
-}
-
-
-footer {
   @include grid-row;
+  margin-top: .5em;
+
+  @media #{$small-up} {
+      @include grid-column($columns:12, $center:true);
+    }
 }
 
-/*.menu-icon {
-  border-bottom: solid 1px darken($tabbar-bg, 10%);
-}*/
+
+i {
+  display: inline-block;
+  float:left;
+  font-size: 1.5em;
+  margin: .145em .5em;
+}
