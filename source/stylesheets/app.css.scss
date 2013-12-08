@@ -1,18 +1,16 @@
 @import "settings";
 @import "foundation";
+@import "foundation/components/grid";
 
 
-header {
+/*header {
   @include grid-row;
 
   .logo  { @include grid-column($columns:3, $center:false); }
-  padding-bottom: em-calc(10px);
-
-}
+  padding-bottom: em-calc(10px);}*/
 
 .main-content {
-  @include grid-row;
-  @include grid-column($columns:12);
+  /*@include grid-column($columns:12);*/
   padding-top: 1.5rem;
 }
 
