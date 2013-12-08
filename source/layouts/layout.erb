@@ -12,8 +12,20 @@
 
   <body class="<%= page_classes %>">
 
+    <div class="off-canvas-wrap hide-for-large-up">
+      <div class="inner-wrap">
 
-    <%= yield %>
+        <%= partial 'layouts/header' %>
+
+
+          <div class="main-content">
+            <%= yield %>
+          </div>
+
+        <a class="exit-off-canvas"></a>
+      </div>
+    </div>
+
 
     <%= javascript_include_tag  "all" %>
   </body>

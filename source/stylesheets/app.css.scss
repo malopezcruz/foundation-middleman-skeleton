@@ -1,36 +1,26 @@
 @import "settings";
 @import "foundation";
-@import "mysettings";
 
 
 header {
   @include grid-row;
 
-  .logo  { @include grid-column($columns:3, $center:true); }
+  .logo  { @include grid-column($columns:3, $center:false); }
   padding-bottom: em-calc(10px);
 
 }
 
-
 .main-content {
   @include grid-row;
-
-  aside  {
-    @include grid-column($columns:6);
-    // @media #{$medium-up} {
-    //   @include grid-column($columns:3);
-    // }
-  }
-
-  article  {
-    @include grid-column($columns:6);
-    // @media #{$medium-up} {
-    //   @include grid-column($columns:8, $offset: 1);
-    // }
-  }
-
+  @include grid-column($columns:12);
+  padding-top: 1.5rem;
 }
+
 
 footer {
   @include grid-row;
 }
+
+/*.menu-icon {
+  border-bottom: solid 1px darken($tabbar-bg, 10%);
+}*/
