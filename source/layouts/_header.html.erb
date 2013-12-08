@@ -1,4 +1,25 @@
-<nav class="tab-bar">
+<nav class="top-bar hide-for-small" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#"></a></h1>
+    </li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="active"><a href="#">Right Nav Button Active</a></li>
+      <li class="has-dropdown">
+        <a href="#">Right Button with Dropdown</a>
+        <ul class="dropdown">
+          <li><a href="#">First link in dropdown</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+</nav>
+
+<nav class="tab-bar show-for-small">
   <section class="left-small">
     <a class="left-off-canvas-toggle menu-icon" ><span></span></a>
   </section>
@@ -11,7 +32,8 @@
 <aside class="left-off-canvas-menu">
   <ul class="off-canvas-list">
     <li><label>Foundation</label></li>
-    <li><a href="#">The Psychohistorians</a></li>
-    <li><a href="#">Otra cosa</a></li>
+    <li><%= link_to 'Services', '#' %></li>
+    <li><%= link_to 'About', '#' %></li>
+    <li><%= link_to 'Contact', 'contact.html' %></li>
   </ul>
 </aside>
